@@ -28,3 +28,6 @@ select * from output limit 100;
 copy output to 'C:/Program Files/PostgreSQL/9.2/data/output.csv' delimiter ',' csv header;
 
 
+There is also a high-resolution version of the script (HR). This uses more accurate landcover information so does not apply a buffer around the road network. This was used to create the higher resolution comparison models in Morley et al 2015. See the paper for details.
+
+
