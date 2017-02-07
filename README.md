@@ -23,8 +23,11 @@ These inputs are needed as files within the Postgres database
 To run the model, firstly run all lines below the commented section to create the functions in the database, then run the following lines to create the noise exposure estimates and export as a csv
 
 drop table if exists output;
+
 select csharp_loop_mimic(); 
+
 select * from output limit 100; 
+
 copy output to 'C:/Program Files/PostgreSQL/9.2/data/output.csv' delimiter ',' csv header;
 
 
